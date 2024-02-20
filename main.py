@@ -50,9 +50,9 @@ def edit_notes():
         save_notes()
 
 
-def delete_note(note_index=None):
+def delete_note():
     note_id = int(input("Введите ID записи для ее удаления: "))
-    note_index -1
+    note_index = -1
     for index, note in enumerate(notes):
         if note['id'] == note_id:
             note_index = index
